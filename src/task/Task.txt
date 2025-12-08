@@ -1,0 +1,48 @@
+1️⃣ useState
+
+Task Statements:
+
+Create a counter app with increment, decrement, and reset buttons.
+
+Build a todo list app where students can add, delete, and edit todos.
+
+Make an input field that updates a heading in real time as the user types.
+.
+.
+.
+
+2️⃣ useEffect
+
+Task Statements:
+
+Create a login form that displays a “Welcome” message after checking credentials. Use useEffect to handle side effects like showing a loading message.
+
+Build a clock component that updates every second using setInterval.
+
+Fetch data from a public API (like JSONPlaceholder) and display it. Use useEffect to trigger the fetch on component mount.
+.
+.
+.
+
+3️⃣ useRef
+
+Task Statements:
+
+Build a form with a focus button: clicking the button should focus the input field.
+
+Track how many times a component re-renders without using state (render counter).
+
+Access a DOM element (like a div) and scroll it into view when a button is clicked.
+.
+.
+.
+
+4️⃣ useReducer
+
+Task Statements:
+
+Create a login form using useReducer to handle username, password, loading, and submission states.
+
+Build a counter app using useReducer with increment, decrement, and reset actions.
+
+Create a todo app where adding, removing, and editing tasks are handled via useReducer.

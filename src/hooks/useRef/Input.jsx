@@ -1,10 +1,10 @@
 import { useRef } from "react";
 
 function InputFocus() {
-  const inputRef = useRef(); // 🎒 we created a ref pocket
+  const inputRef = useRef();
 
   const handleClick = () => {
-    inputRef.current.focus(); // 👈 access DOM element directly
+    inputRef.current.focus();
   };
 
   return (

@@ -13,7 +13,12 @@ export default function RenderCounter() {
       <h3>Button clicked: {count}</h3>
       <h3>Component Rendered: {renderCount.current} times</h3>
 
-      <button onClick={() => setCount(count + 1)}>Click</button>
+      <button
+        onClick={() => setCount(count + 1)}
+        className="bg-black px-2 py-1 text-white"
+      >
+        Click
+      </button>
     </div>
   );
 }

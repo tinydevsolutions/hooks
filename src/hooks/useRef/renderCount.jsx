@@ -1,25 +1,19 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 
-const RenderCounter = () => {
-  const countRef = useRef(0);
-  const [value, setValue] = useState("");
+export default function RenderCounter() {
+  const renderCount = useRef(1); // store value secretly
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    countRef.current += 1;
+    renderCount.current++;
   });
 
   return (
-    <div className="p-4 space-y-3">
-      <input
-        type="text"
-        className="border p-2"
-        placeholder="Type anything"
-        onChange={(e) => setValue(e.target.value)}
-      />
+    <div>
+      <h3>Button clicked: {count}</h3>
+      <h3>Component Rendered: {renderCount.current} times</h3>
 
-      <p>Component Render Count: {countRef.current}</p>
+      <button onClick={() => setCount(count + 1)}>Click</button>
     </div>
   );
-};
-
-export default RenderCounter;
+}
